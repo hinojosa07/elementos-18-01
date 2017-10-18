@@ -29,19 +29,20 @@ public class Mensajito {
         this.cuerpo = cuerpo;
     }
 
+    @Override
+    public String toString() {
+        return "Mensajito{" + "id=" + id + ", titulo=" + titulo + ", cuerpo=" + cuerpo + '}'; //para que no nos muestre los numeritos de Elementos1801Aplication
+    }
+
     public Mensajito(String titulo, String cuerpo) {
         this.titulo = titulo;
         this.cuerpo = cuerpo;
     }
-
     public Mensajito(Integer id) {
         this.id = id;
     }
-
     public Mensajito() {
-    }
-    
-   
+    }    
     public Integer getId() {
         return id;
     }
